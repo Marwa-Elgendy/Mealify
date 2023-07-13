@@ -1,0 +1,1228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+}
+
+#NavBar{
+    position: fixed;
+    flex-wrap: wrap;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1.5%;
+    z-index: 999;
+    box-shadow: 0 0 5px rgb(245, 245, 245);
+}
+#NavBar .Mealify a{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 2.1rem;
+    
+}
+#NavBar .Mealify span{
+    color: #C17E1F;
+    font-size:2rem ;
+}
+#NavBar .NavUl {
+    width: 25%;
+
+}
+#NavBar .NavUl ul {
+   font-size: 1.2rem;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+#NavBar .NavUl ul a{
+
+    color: #f7f7fa;
+    transition: 0.7s 0s;
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+#NavBar .NavUl ul .border{
+   
+    width: 0;
+    height: 3px;
+    background-color:#C17E1F;
+    position: absolute;
+    right: 100%;
+    bottom: 0;
+    
+}
+
+
+body:has(#Home:target) #NavBar .Home-LINK {
+    color: #C17E1F;
+   
+
+}
+
+body:has(#Home:target) #NavBar .Home-LINK {
+    border-bottom: solid #C17E1F;
+    width: 100%;
+    height:3px;
+
+}
+
+body:has(#Chefs:target) #NavBar .Chefs-LINK {
+    color: #C17E1F;
+   
+
+}
+
+body:has(#Chefs:target) #NavBar .Chefs-LINK {
+    border-bottom:solid #C17E1F;
+    width: 100%;
+    height:3px;
+
+}
+
+body:has(#Gallery:target) #NavBar .Gallery-LINK {
+    color: #C17E1F;
+   
+
+}
+
+body:has(#Gallery:target) #NavBar .Gallery-LINK {
+    border-bottom:solid #C17E1F;
+    width: 100%;
+    height:3px;
+
+}
+
+body:has(#Contact:target) #NavBar .Contact-LINK {
+    color: #C17E1F;
+   
+
+}
+
+body:has(#Contact:target) #NavBar .Contact-LINK {
+    border-bottom:solid #C17E1F;
+    width: 100%;
+    height:3px;
+
+}
+
+#NavBar .NavUl ul a:hover .border{
+    position: absolute;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    transition: 0.7s 0s;
+    
+
+}  
+#NavBar .NavUl ul a:hover{
+    color: #C17E1F;
+    
+  
+   
+}
+#NavBar .DarkMode a{
+    font-size: 2rem;
+    color: rgb(255, 254, 254);
+}
+
+#Home{
+    height: 100vh;
+    background-color: #000000e8;
+  
+}
+
+#Home .container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+    height: 100%;
+    
+}
+
+#Home .container .Home-contect{
+  
+    align-items: center;
+    width: 40%;
+   
+}
+
+#Home .container .Home-contect h2{
+    font-size: 4rem;
+    font-family: "Amatic SC", sans-serif;
+    color: white;
+}
+
+#Home .container .Home-contect p{
+    margin-block: 20px;
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+    color: #ffffffc7;
+    font-family: "Inter", sans-serif;
+}
+
+#Home .container .Home-contect .btn-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    justify-content: space-between;
+}
+
+#Home .container .Home-contect .btn1 {
+    border: solid ;
+    padding: 0.6rem 1.5rem;
+    background-color:#C17E1F;
+    border-radius: 0px 3rem 3rem;
+    border-color: #C17E1F;
+    color: white;
+
+}
+
+#Home .container .Home-contect .btn1:hover{
+    background-color:#C17E1F;
+}
+
+#Home .container .Home-contect .btn-group .video-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 254, 254);
+
+}
+
+#Home .container .Home-contect .btn-group .video-btn:hover{
+    color:  #C17E1F;
+}
+
+#Home .container .Home-contect .btn-group .icon{
+    border: solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    padding: 0.9rem;
+    border-radius: 50%;
+    position: relative;
+    
+}
+
+
+
+#Home .container .Home-contect .btn-group .icon::before{
+    content: '';
+    width: 2rem;
+    height: 4rem;
+    position: absolute;
+    background-color:#C17E1F;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100% ,-50%);
+    border-radius: 2rem 0 0 2rem;
+    z-index: -1;
+}
+
+
+#Home .container .Home-contect .btn-group .video-btn span{
+    padding: 1rem;
+   
+}
+
+#Home .container .picture{
+
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Home .container .picture img{
+    width: 100%;
+    height: 85%;
+    padding-top: 10%;
+    filter: drop-shadow(0 0 5px rgb(255, 254, 254));
+    
+}
+
+#Home .container .picture img:hover{
+    animation: vibrator 0.5s infinite;
+    position: relative;
+}
+
+
+@keyframes vibrator{
+    0%{
+        top: 0;
+        left: 0;
+        
+      }
+      25%{
+        top: 0;
+        left: 3px;
+        
+      }
+      50%{
+        top: 3px;
+        left: 3px;
+        
+      }
+      75%{
+        top: 3px;
+        left: 0;
+        
+      }
+      100%{
+        top: 0;
+        left: 0;
+       
+      }
+
+}
+
+
+#Chefs{
+    height: 130vh;
+    background-color: rgba(0, 0, 0, 0.973);
+  
+}
+
+#Chefs .container .title{
+    
+    text-align: center;
+    padding-top: 5%;
+}
+#Chefs .container .title h2{
+    font-size: 0.9rem;
+    color:#ffffff ;
+    font-weight: 400;
+}
+
+#Chefs .container .title p{
+    font-size: 3.2rem;
+    color: white;
+    font-family: "Amatic SC", sans-serif;
+}
+
+#Chefs .container .title span{
+    color:#C17E1F;
+}
+
+#Chefs .container  .chef-cards{
+
+    height: 70%;
+    width: 90%;
+    margin: auto;
+    padding-top: 3%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#Chefs .container  .chef-cards .cards{
+
+    width: 32%;
+    height: 95%;
+    box-shadow: 0 0 5px rgba(239, 239, 239, 0.692);
+    border: solid rgba(0, 0, 0, 0.662);
+    border-radius: 0.5rem;
+    transition: 0.7s 0s;
+    position: relative;
+    overflow: hidden;
+}
+
+#Chefs .container  .chef-cards .cards img{
+    width: 100%;
+    height: 70%;
+    border-radius: 0.5rem;
+}
+
+#Chefs .container  .chef-cards .cards:hover{
+    transform: scale(1.06);
+}
+
+#Chefs .container  .chef-cards .cards .cards-text{
+    text-align: center;
+    padding: 1% 5%;
+}
+
+#Chefs .container  .chef-cards .cards .cards-text h3{
+    color: white;
+}
+#Chefs .container  .chef-cards .cards .cards-text span{
+    font-size: 0.9rem;
+    color:#a9a9b6 ;
+}
+#Chefs .container  .chef-cards .cards .cards-text p{
+    color:#9b9ba7 ;
+    font-size: 0.95rem; 
+    font-style: italic; 
+}
+
+#Chefs .container  .chef-cards .cards .social{
+    width: 10%;
+    height: 28%;
+    background-color: #ffffff94;
+   border-radius: 5px;
+   text-align: center;
+   position: absolute;
+    left: 102%;
+    top: 5%;
+ 
+}
+
+#Chefs .container  .chef-cards .cards:hover .social{
+    position: absolute;
+   left: 89%;
+    top: 7%;
+    transition: 0.7s 0.3s;
+}
+
+#Chefs .container  .chef-cards .cards .social ul li{
+    padding: 15%;
+    font-size: 1.3rem;
+    
+}
+
+#Chefs .container  .chef-cards .cards .social ul li i{
+    color: #7f7f90d0;
+}
+#Chefs .container  .chef-cards .cards .social ul li i:hover{
+    color: #313134;
+    transition: 1s;
+}
+
+
+#Gallery{
+    height: 210vh;
+    background-color: #000000e8;
+}
+
+#Gallery .container .title{
+    
+    text-align: center;
+    padding-top: 5%;
+}
+#Gallery .container .title h2{
+    font-size: 0.9rem;
+    color:#ffffff ;
+    font-weight: 400;
+}
+
+#Gallery .container .title p{
+    color: white;
+    font-size: 3.2rem;
+    font-family: "Amatic SC", sans-serif;
+}
+
+#Gallery .container .title span{
+    color:#C17E1F;
+}
+
+#Gallery .container .imgs{
+    padding-top: 1%;
+    height: 80%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+#Gallery .container .imgs img{
+    transition: 0.6s;
+    
+}
+
+#Gallery .container .imgs .meals{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border: solid 0.25rem white;
+}
+
+
+ #Gallery .container .imgs .meal1{
+    padding-bottom: 2%;
+    width: 32%;
+    height: 28%;
+   
+
+}
+
+
+
+#Gallery .container .imgs .meal2{
+    width: 32%;
+    height: 48%;
+    
+}
+
+#Gallery .container .imgs .meal3{
+    width: 32%;
+    height: 60%;
+    padding-bottom: 2%;
+}
+
+#Gallery .container .imgs .meal4{
+    width: 32%;
+    height: 40%;
+   
+}
+
+#Gallery .container .imgs .meal5{
+    width: 32%;
+    height: 28%;
+    padding-bottom: 2%;
+}
+
+
+#Gallery .container .imgs .meal6{
+    width: 32%;
+    height: 35%;
+    
+} 
+
+#Gallery .container .imgs .meals .meal-info{
+    background-color: #00000093;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    transition: 0.6s;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    line-height: 2rem;
+}
+#Gallery .container .imgs .meals:hover .meal-info{
+    position: absolute;
+    top: 0%;
+   
+}
+
+#Gallery .container .imgs .meals:hover img{
+    transform: scale(1.1);
+}
+
+#Gallery .container .imgs .meals h4{
+    
+    font-size: 1.5rem;
+
+}
+
+
+#Contact{
+    height: 180vh;
+    background-color: rgba(0, 0, 0, 0.863);
+}
+
+
+
+#Contact .container .title{
+    
+    text-align: center;
+    padding-top: 5%;
+}
+#Contact .container .title h2{
+    font-size: 0.9rem;
+    color:#dddde3 ;
+    font-weight: 400;
+}
+
+#Contact .container .title p{
+    font-size: 3.2rem;
+    font-family: "Amatic SC", sans-serif;
+    color: white;
+}
+
+#Contact .container .title span{
+    color: #C17E1F;
+}
+
+
+#Contact .container .contact-contact{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: 87%;
+    align-content: space-evenly;
+ 
+}
+
+
+#Contact .container .contact-contact .frame{
+    width: 100%;
+    height: 35%;
+   
+}
+#Contact .container .contact-contact .frame iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#Contact .container .contact-contact .detail{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 20%;
+    justify-content: center;
+    justify-content: space-between;
+   
+}
+
+#Contact .container .contact-contact .detail .address ,.contact-contact .detail .email,.contact-contact .detail .phone,.contact-contact .detail .Opening-hours{
+
+    width: 49.4%;
+    height: 40%;
+    background-color:#000000;
+  
+  }
+
+
+#Contact .container .contact-contact .detail  i{
+
+    font-size: 1.3rem;
+    color: white;
+    border: solid #C17E1F;
+    background-color: #C17E1F;
+    border-radius: 50%;
+    padding: 0.8rem;
+}
+#Contact .container .contact-contact .detail p{
+    color: white;
+}
+
+#Contact .container .contact-contact .detail .det{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-left: 3%;
+    box-shadow: 0 0 2px #76747414;;
+}
+
+#Contact .container .contact-contact .detail .det .det-text h3{
+    color: #7D7D7D;
+    font-size: 1.25rem;
+    padding-bottom: 5%;
+    
+}
+#Contact .container .contact-contact .detail .det .det-text{
+    padding-left: 1rem;
+}
+
+#Contact .container .contact-contact .detail .det .det-text span{
+    font-weight: 700;
+}
+
+#Contact .container .contact-contact .forms{
+    width: 100%;
+    height:35% ;
+    background-color: #0c0c0c;
+    box-shadow: 0 0 9px rgba(10, 10, 10, 0.715);
+   align-content: space-between;
+   align-content: center;
+   align-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+#Contact .container .contact-contact .forms .form1{
+        width: 100%;
+        height: 17%;
+        padding-top: 1rem;
+ 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+#Contact .container .contact-contact .forms .form1 input{
+        width: 48%;
+        height: 100%;
+        border: rgba(159, 135, 120, 0.324) solid 2px;
+       padding-left: 1rem;
+       
+       
+    }
+
+#Contact .container .contact-contact .forms .form2{
+        width: 100%;
+        height: 55%;
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-around;
+        align-content: center;
+        align-content: space-between;
+    }
+
+#Contact .container .contact-contact .forms .form2 .input1{
+        width: 97.3%;
+        border: rgba(159, 135, 120, 0.324) solid 2px;
+        padding-left: 1rem;
+        height: 25%;
+
+    }
+
+   
+#Contact .container .contact-contact .forms textarea{
+        height: 70%;
+        min-height: 9.375rem;
+        max-height: 18.75rem;
+        resize: vertical;
+        padding-top: 1rem;
+    }
+
+#Contact .container .contact-contact .forms .submit  {
+    margin: auto;
+
+}
+#Contact .container .contact-contact .forms .submit button{
+    color: rgb(253, 252, 252);
+    background-color:#C17E1F;
+    border: #C17E1F solid;
+    padding: 1rem;
+    border-radius: 100vh;
+}
+
+#Contact .container .footer{
+    width: 100%;
+    height: 28%;
+    background-color: rgb(0, 0, 0);
+}
+#Contact .container .footer .row{
+    width: 90%;
+    margin: auto;
+    height: 100%;
+   
+    display: flex; 
+    flex-wrap: wrap ;
+    justify-content: space-between;
+}
+#Contact .container .footer .row .footer1{
+    width: 23%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: rgb(255, 250, 250);
+    
+}
+
+
+#Contact .container .footer .row .footer1 .footer-img{
+    
+    height: 20%;
+    display: flex;
+    
+    align-content: center;
+}
+#Contact .container .footer .row .footer1 .footer-img img{
+    width: 2.7rem;
+    height: 2.7rem;
+}
+
+#Contact .container .footer .row .footer1 .footer-img a{
+    color:white;
+    font-weight: 600;
+    font-size: 2.1rem;
+    padding-left: 0.8rem;
+
+}
+
+#Contact .container .footer .row .footer1 .footer-img span{
+    color: #C17E1F;
+    font-size:2rem ;
+
+}
+
+
+
+#Contact .container .footer .row .footer1 .social{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+#Contact .container .footer .row .footer1 .social .h{
+    width: 100%;
+    border-bottom: 2px solid #ddd6;
+    padding-bottom:  1rem;
+    font-size: 1.3rem;
+    text-align: center;
+    
+}
+
+#Contact .container .footer .row .footer1 .social ul{
+    width: 100%;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+
+  
+}
+
+#Contact .container .footer .row .footer1 .social ul i{
+    color: white;
+}
+
+
+#Contact .container .footer .row .footer2{
+    width: 44%;
+    height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+
+}
+
+#Contact .container .footer .row .footer2 .Subscribe{
+    width: 100%;
+    height: 25%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+#Contact .container .footer .row .footer2 .Subscribe h4{
+    font-size: 1.3rem;
+    width: 100%;
+    padding-bottom: 1rem;
+ 
+    
+}
+#Contact .container .footer .row .footer2 .Subscribe p{
+  
+    height: fit-content;
+}
+
+#Contact .container .footer .row .footer2  .Subscribe-group{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#Contact .container .footer .row .footer2 .Subscribe-group input{
+    width: 80%;
+    height: 65%;
+    padding: 1.2rem;
+}
+
+#Contact .container .footer .row .footer2  .Subscribe-group button{
+    width: 19%;
+    height: 70%;
+    color: white;
+    background-color: #C17E1F;
+    border:#C17E1F solid;
+}
+
+#Contact .container .footer .row .footer2 .Quick-Links{
+    width: 100%;
+    height:40%;
+}
+#Contact .container .footer .row .footer2 .Quick-Links ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#Contact .container .footer .row .footer2 .Quick-Links h4{
+    font-size: 1.2rem;
+    color: white;
+    padding-bottom: 3%;
+}
+#Contact .container .footer .row .footer2 .Quick-Links i{
+    color: white;
+}
+#Contact .container .footer .row .footer2 .Quick-Links li{
+    
+    width: 48%;
+    transition: 0.5s ;
+}
+
+#Contact .container .footer .row .footer2 .Quick-Links li a{
+    color: white;
+    
+    
+}
+
+#Contact .container .footer .row .footer2 .Quick-Links li:hover{
+    transform: translatex(3%);
+    background-color: rgba(255, 255, 255, 0.208);
+}
+
+#Contact .container .footer .row .footer3{
+    width: 30%;
+    height: 100%;
+    line-height: 2rem;
+    box-sizing: content-box;
+    color: white;
+    padding-top: 1%;
+   
+}
+#Contact .container .footer .row .footer3 h4{
+    font-size: 1.3rem;
+}
+
+#Contact .container .footer .row .footer3 i{
+    color: #C17E1F;
+    font-size: 1.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    padding-left: 5%;
+    
+   
+}
+
+
+@media screen  and (max-width:1200px){
+    #NavBar .NavUl {
+        width: 50%;}
+
+        #Gallery{
+            height: 280vh;
+            
+          }
+          #Gallery .container .imgs{
+          
+            flex-direction: row;
+            justify-content: space-around;
+          }
+        
+          #Gallery .container .imgs .meal1{
+            
+            width: 45%;
+            height: 25%;
+           
+          
+          }
+        
+          #Gallery .container .imgs .meal2{
+            width: 45%;
+            height: 35%;
+            
+          }
+          
+        #Gallery .container .imgs .meal3{
+            width: 45%;
+            height: 40%;
+            margin-top: -20%;
+            
+          }
+          
+          #Gallery .container .imgs .meal4{
+            width: 45%;
+            height: 25%;
+           
+          }
+          
+          #Gallery .container .imgs .meal5{
+            width: 45%;
+            height: 25%;
+            
+          }
+          
+          
+          #Gallery .container .imgs .meal6{
+            width: 45%;
+            height: 25%;
+            
+          } 
+       
+      
+      }
+@media screen  and (max-width:950px){
+
+    #Chefs{
+        height: 180vh;
+      
+      }
+    
+      #Chefs .container  .chef-cards .cards{
+    
+        width: 47%;
+        height: 60%;
+        margin:2% auto ;
+       
+      }
+
+    #Contact{
+        height: 200vh;
+       
+      }
+      #Contact .container .contact-contact .frame{
+        width: 90%;
+        height: 20%;
+        margin: auto;
+       
+      }
+      #Contact .container .contact-contact .detail{
+        
+        height: 30%;
+    }
+    
+      #Contact .container .contact-contact .detail .address ,#Contact .container .contact-contact .detail .email ,#Contact .container .contact-contact .detail .phone,#Contact .container .contact-contact .detail .Opening-hours{
+    
+        width: 80%;
+        height: 20%;
+        margin: auto ;
+    }
+    
+    #Contact .container .contact-contact .forms{
+        
+        height:40% ;
+    }
+    
+    #Contact .container .contact-contact .forms .form1{
+        width: 80%;
+        height: 35%;
+        margin: auto;
+       
+        
+    }
+    
+    #Contact .container .contact-contact .forms .form1 input{
+        width: 100%;
+        height: 35%;
+       
+       
+    }
+    
+    #Contact .container .contact-contact .forms .form2{
+        width: 90%;
+        height: 45%;
+        margin: auto;
+        
+        
+    }
+    
+    #Contact .container .contact-contact .forms .form2 .input1,.forms .form2 textarea{
+        width: 90%;
+    }
+
+    
+#Contact .container .footer{
+
+    height: 60%;
+    position: relative;
+}
+
+#Contact .container .footer .row .footer1{
+    width: 50%;
+    height: 40%;
+}
+
+
+#Contact .container .footer .row .footer2{
+    width: 100%;
+    height: 50%;
+    padding-top: 3%;
+}
+
+#Contact .container .footer .row .footer3{
+    width: 50%;
+    height: 40%;
+    padding-top: 3%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+}
+
+@media screen  and (max-width:700px){
+
+    #NavBar .NavUl ul{
+        flex-direction: column;
+    }
+
+    
+#Home{
+    height: 150vh;
+    
+  
+}
+    
+#Home .container .Home-contect{ 
+    padding-top: 7rem;
+    width: 100%;
+    height: 45%;
+   
+ 
+}
+#Home .container .picture{
+
+    width: 80%;
+    height: 50%;
+    margin: auto;
+   
+}
+  
+#Chefs{
+    height: 300vh;
+  
+  }
+
+  #Chefs .container  .chef-cards .cards{
+
+    width: 80%;
+    height: 43%;
+    margin:2% auto ;
+   
+  }
+
+  #Gallery{
+    height: 500vh;
+    
+  }
+  #Gallery .container .imgs{
+  
+    flex-direction: row;
+    
+  }
+
+  #Gallery .container .imgs .meal1{
+    
+    width: 100%;
+    height: 12%;
+   
+  
+  }
+
+  #Gallery .container .imgs .meal2{
+    width: 100%;
+    height: 25%;
+    
+  }
+  
+#Gallery .container .imgs .meal3{
+    width: 100%;
+    height: 27%;
+    
+  }
+  
+  #Gallery .container .imgs .meal4{
+    width: 100%;
+    height: 15%;
+   
+  }
+  
+  #Gallery .container .imgs .meal5{
+    width: 100%;
+    height: 12%;
+    
+  }
+  
+  
+  #Gallery .container .imgs .meal6{
+    width: 100%;
+    height: 15%;
+    
+  } 
+ 
+  #Contact{
+    height: 250vh;
+   
+  }
+  #Contact .container .contact-contact .frame{
+    width: 90%;
+    height: 20%;
+    margin: auto;
+   
+  }
+  #Contact .container .contact-contact .detail{
+    
+    height: 30%;
+}
+
+  #Contact .container .contact-contact .detail .address ,#Contact .container .contact-contact .detail .email ,#Contact .container .contact-contact .detail .phone,#Contact .container .contact-contact .detail .Opening-hours{
+
+    width: 90%;
+    height: 20%;
+    margin: auto 3%;
+}
+
+#Contact .container .contact-contact .forms{
+    align-content: space-evenly;
+}
+
+#Contact .container .contact-contact .forms .form1{
+    width: 90%;
+    height: 35%;
+    margin: auto;
+}
+
+#Contact .container .contact-contact .forms .form1 input{
+    width: 100%;
+    height: 35%;
+   
+   
+}
+
+#Contact .container .contact-contact .forms .form2{
+    width: 90%;
+    height: 43%;
+    margin: auto;
+}
+
+#Contact .container .contact-contact .forms .form2 .input1,.forms .form2 textarea{
+    width: 100%;
+}
+
+#Contact .container .footer{
+
+    height: 70%;
+}
+
+#Contact .container .footer .row .footer1{
+    width: 100%;
+    height: 30%;
+}
+
+
+#Contact .container .footer .row .footer2{
+    width: 100%;
+    height: 33%;
+    padding-top: 3%;
+}
+
+#Contact .container .footer .row .footer3{
+    width: 100%;
+    height: 30%;
+    padding-top: 3%;
+}
+   
+
+     
+}
